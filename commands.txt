@@ -1,0 +1,6 @@
+Connect to cluster on Scaleway
+export KUBECONFIG="C:\i3\Academy\Kubernetes\kubeconfig-bonny-cluster.yaml"
+alias k=kubectl
+
+Argocd password:
+kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d && echo
